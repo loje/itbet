@@ -1,0 +1,264 @@
+.top-main{
+    width:100%;
+    height:330px;
+    background-image: radial-gradient(50% 150%, #8146ed 25%, #4E21D6 100%),linear-gradient(0deg, #084893 0%, rgba(19,127,197,0.00) 100%);
+}
+.top-main .container{
+    height: 100%;
+    position: relative;
+}
+.top-main .container .top-nav{
+    position: relative;
+    padding: 15px 0px;
+    width: 100%;
+}
+.top-main .container .top-nav .search-bar{
+    margin: auto;
+    padding: 0px 10px;
+    width:250px;
+    height:40px;
+    background-color: rgba(253,235,128,0.25);
+    border-radius: 32px;
+    box-sizing: border-box;
+}
+.top-main .container .top-nav .search-bar input{
+    width:100%;
+    height: 100%;
+    border:none;
+    background-color: rgba(93,38,242,0.25);
+    text-align: center;
+    color: #fff;
+    text-shadow: 0px 0px 24px rgba(0,0,0,0.5);
+    outline: none;
+    border-radius: 34px;
+}
+.top-main .container .top-nav .search-bar input::placeholder{
+    color: rgba(255,255,255,0.5);
+}
+
+.top-main .container .top-nav .company-date{
+    position: absolute;
+    right: 0px;
+    top:0px;
+    padding: 15px 0px;
+}
+.top-main .container .top-nav .company-date .birth-company,
+.top-main .container .top-nav .company-date .death-company{
+    display: inline-block;
+    line-height: 40px;
+    color: #fff;
+}
+.top-main .container .top-nav .company-date .birth-company{
+    padding-right: 15px;
+}
+.top-main .container .top-nav .company-date .birth-company i.iconfont,
+.top-main .container .top-nav .company-date .death-company i.iconfont{
+    display: inline-block;
+    width:24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+}
+.top-main .container .top-nav .company-date .birth-company i.iconfont{
+    background-color: #22c46b;
+    font-size: 18px;
+}
+.top-main .container .top-nav .company-date .death-company i.iconfont{
+    background-color: #507884;
+    font-size: 18px;
+}
+
+.top-main .container .index-logo{
+    margin: auto;
+    width:148px;
+    height: 148px;
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    animation: suspend 1200ms cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;
+    -moz-animation: suspend 1200ms cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;	/* Firefox */
+    -webkit-animation: suspend 1200ms cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;	/* Safari 和 Chrome */
+    -o-animation: suspend 1200ms cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite alternate;	/* Opera */
+}
+@keyframes suspend
+{
+    from {transform: translate(0px,20px);}
+    to {transform: translate(0px,0px);}
+}
+
+@-moz-keyframes suspend /* Firefox */
+{
+    from {transform: translate(0px,20px);}
+    to {transform: translate(0px,0px);}
+}
+
+@-webkit-keyframes suspend /* Safari 和 Chrome */
+{
+    from {transform: translate(0px,20px);}
+    to {transform: translate(0px,0px);}
+}
+
+@-o-keyframes suspend /* Opera */
+{
+    from {transform: translate(0px,20px);}
+    to {transform: translate(0px,0px);}
+}
+
+.top-main .container .index-nav{
+    position: absolute;
+    left: 0px;
+    bottom:0px;
+    padding:0px 15px 15px 15px;
+    width:100%;
+    box-sizing: border-box;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-box-pack:justify;
+    -webkit-justify-content:space-between;
+    -ms-flex-pack:justify;
+    justify-content:space-between;
+}
+
+.top-main .container .index-nav a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.top-main .container .index-nav a.active{
+    color: #fbd249;
+}
+
+.article-part{
+    padding: 15px 0px;
+    line-height: 1.6;
+    font-size: 14px;
+    text-indent: 2em;
+}
+.article-part article{
+    color: rgba(0,0,0,0.5);
+}
+.time-line .yearbook .container .the-year{
+    position: relative;
+    padding-top: 10px;
+}
+.time-line .yearbook .container .the-year .line{
+    position: absolute;
+    left:0px;
+    top:32px;
+    width:100%;
+    padding: 5px 0px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.time-line .yearbook .container .the-year .line span{
+    display: block;
+    margin: auto;
+    width: 5px;
+    height: 100%;
+    background-color: rgba(74,144,226,0.5);
+}
+
+.time-line .yearbook .container .the-year h4{
+    position: relative;
+    margin: 0px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+    color: rgba(14,19,254,0.5);
+    z-index:1;
+}
+
+.time-line .yearbook .container .the-year .the-month{
+    position: relative;
+    padding: 10px 0px;
+    z-index:1;
+}
+.time-line .yearbook .container .the-year .the-month .square-set{
+    position: relative;
+    margin: auto;
+    width:46px;
+    height: 46px;
+}
+.time-line .yearbook .container .the-year .the-month .square-set .square1{
+    position: absolute;
+    left: 3px;
+    top:3px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(74,144,226,0.5);
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    z-index:1;
+}
+.time-line .yearbook .container .the-year .the-month .square-set .square2{
+    position: absolute;
+    left:7px;
+    top:7px;
+    width: 32px;
+    height: 32px;
+    background-color: rgba(144,19,254,0.5);
+    transform: rotate(45deg);
+    z-index:0;
+}
+.time-line .yearbook .container .the-year .the-month .the-company-logo{
+    text-align: center;
+}
+.time-line .yearbook .container .the-year .the-month .the-company-logo .logo{
+    position: relative;
+    display: inline-block;
+    margin: 10px 10px 15px;
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+}
+.time-line .yearbook .container .the-year .the-month .the-company-logo .logo span{
+    position: absolute;
+    left: 0px;
+    bottom:-5px;
+    display: block;
+    width:100%;
+    text-align: center;
+}
+.time-line .yearbook .container .the-year .the-month .the-company-logo .logo span i.iconfont{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    color: #fff;
+}
+.time-line .yearbook .container .the-year .the-month .the-company-logo .logo .birth-company i.iconfont{
+    background-color: #22c46b;
+    font-size: 18px;
+}
+
+.time-year{
+    position: fixed;
+    right: 15px;
+    top:400px;
+}
+.time-year .year{
+    padding: 15px 10px;
+    border-left:1px dotted rgba(0,0,0,0.1);
+}
+.time-year .year.active{
+    border-color: #9b9b9b;
+}
+.time-year .year a{
+    color: #9b9b9b;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.time-year .year.active a{
+    font-size: 18px;
+    color: #4990e2;
+}

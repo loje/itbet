@@ -1,0 +1,292 @@
+.bg-layer{
+    position: fixed;
+    left: 0px;
+    top:0px;
+    width:100%;
+    height: 100%;
+    background-image: radial-gradient(100% 50%, #8646ED 50%, #4E21D6 100%);
+    z-index:0;
+}
+.bg-layer .bg-layer-bg{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width:100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, #084893 0%, rgba(19,127,197,0.00) 100%);
+}
+
+.top-layer{
+    position: fixed;
+    left: 0px;
+    top:0px;
+    width:100%;
+    height: 40px;
+    padding: 8px 0px 8px 16px;
+    box-sizing: border-box;
+    background: -webkit-linear-gradient(top , rgba(78, 33, 214,100) 25% , rgba(230, 19, 70,0) 100%);
+    z-index: 2;
+}
+.top-layer .mobile-logo{
+    width: 124px;
+    height: 24px;
+    background-image: url(../img/mobile_logo.png);
+    background-size: contain;
+}
+.top-layer .menu-button{
+    position: absolute;
+    right: 16px;
+    top:8px;
+}
+.top-layer .menu-button i.iconfont{
+    line-height: 24px;
+    font-size: 18px;
+    color: rgba(255,255,255,0.5);
+}
+.btm-layer{
+    position: fixed;
+    left: 0px;
+    bottom:0px;
+    display: table;
+    width:100%;
+    text-align: center;
+    background: -webkit-linear-gradient(top , rgba(78, 33, 214,0) 0% , rgba(8, 72, 147,100) 25%);
+    box-sizing: border-box;
+    z-index:2;
+}
+.btm-layer .btm-layer-td{
+    display: table-cell;
+    vertical-align: middle;
+}
+.btm-layer .btm-layer-td span{
+    display: block;
+    line-height: 24px;
+    color: #fff;
+    text-align: left;
+}
+.btm-layer .btm-layer-td span i.iconfont{
+    float: left;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+}
+.btm-layer .btm-layer-td:nth-child(1) span{
+    padding: 15px;
+}
+.btm-layer .btm-layer-td:nth-child(1) span i.iconfont{
+    background-color: #22c46b;
+}
+.btm-layer .btm-layer-td:nth-child(2){
+    vertical-align: middle;
+}
+.btm-layer .btm-layer-td:nth-child(2) span{
+    text-align: center;
+}
+.btm-layer .btm-layer-td:nth-child(2) span i.iconfont{
+    float: inherit;
+    margin: 0px;
+    font-size: 32px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 100;
+}
+.btm-layer .btm-layer-td:nth-child(3) span{
+    float: right;
+    padding: 15px;
+}
+.btm-layer .btm-layer-td:nth-child(3) span i.iconfont{
+
+    margin-left: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    background-color: #507884;
+}
+
+
+.time-line{
+    padding: 74px 0px;
+}
+.time-line .yearbook .container .the-year{
+    position: relative;
+    padding: 10px 15px 0px 15px;
+}
+
+.time-line .yearbook .container .the-year fieldset{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+    color: rgba(255,255,255,0.5);
+    border:none;
+    border-top:1px solid rgba(255,255,255,0.25);
+    z-index:1;
+}
+.time-line .yearbook .container .the-year fieldset legend{
+    padding: 0px 15px;
+    color: rgba(255,255,255,0.25);
+    font-size: 18px;
+}
+
+.time-line .yearbook .container .the-year .the-month{
+    position: relative;
+    padding: 10px 0px;
+    z-index:1;
+}
+
+.time-line .yearbook .container .the-year .the-month p{
+    margin: 0px;
+    font-size: 14px;
+    color: #4990e2;
+    text-align: center;
+    line-height: 28px;
+    z-index:1;
+}
+
+.time-line .yearbook .container .the-year .the-month .the-company-logo{
+    text-align: center;
+}
+.time-line .yearbook .container .the-year .the-month .the-company-logo .logo{
+    position: relative;
+    display: inline-block;
+    margin: 10px 15px;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 6px;
+}
+.time-line .yearbook .container .the-year .the-month .the-company-logo .logo span{
+    position: absolute;
+    left: 0px;
+    bottom:-9px;
+    display: block;
+    width:100%;
+    text-align: center;
+}
+.time-line .yearbook .container .the-year .the-month .the-company-logo .logo span i.iconfont{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    line-height: 18px;
+    color: #fff;
+    border-radius: 50%;
+}
+.time-line .yearbook .container .the-year .the-month .the-company-logo .logo .birth-company i.iconfont{
+    background-color: #22c46b;
+    font-size: 18px;
+}
+
+.time-year{
+    position: fixed;
+    right: 0px;
+    top:0px;
+    display: table;
+    /*width:100%;*/
+    height: 100%;
+    z-index:1;
+}
+.time-year .time-year-td{
+    display: table-cell;
+    vertical-align: middle;
+}
+.time-year .time-year-td .year-point{
+    padding: 15px 10px;
+    text-align: right;
+}
+.time-year .time-year-td .year-point a{
+    color: #9b9b9b;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.time-year .time-year-td .year-point a .point{
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.25);
+}
+.time-year .time-year-td .year-point a .year{
+    display: none;
+    font-size: 12px;
+    color: #fff;
+}
+
+.time-year .time-year-td .year-point a.active .point{
+    background-color: #fff!important;
+
+}
+.time-year .time-year-td .year-point a.active .year{
+    display: inline!important;
+}
+
+
+.menu-layer{
+    position: fixed;
+    left: 0px;
+    top:0px;
+    width:100%;
+    height: 100%;
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.75) 0%, #023584 100%);
+    z-index: 3;
+}
+.menu-layer .close-btn{
+    position: absolute;
+    right: 15px;
+    top:15px;
+    z-index:1;
+}
+.menu-layer .close-btn i.iconfont{
+    font-size: 24px;
+    color: rgba(255,255,255,0.5);
+    -webkit-text-stroke-width:0px;
+}
+.menu-layer .menu-layer-table{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    display: table;
+    width:100%;
+    height: 80%;
+    text-align: center;
+    z-index:0;
+}
+.menu-layer .menu-layer-table .menu-layer-tr{
+    display: table-row;
+}
+.menu-layer .menu-layer-table .menu-layer-tr .menu-layer-td{
+    display: table-cell;
+    vertical-align: middle;
+}
+.menu-layer .menu-layer-table .menu-layer-tr .menu-layer-td a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+.menu-layer .menu-layer-table .menu-layer-tr .menu-layer-td a.active{
+    color: rgba(251,210,73,100);
+}
+.menu-layer .menu-layer-table .menu-layer-tr .menu-layer-td input{
+    width: 75%;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(241,187,138,0.25);
+    border:none;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    outline: none;
+}

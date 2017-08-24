@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>ITBEL</title>
+
+    <link href="css/min.css" rel="stylesheet"/>
+    <link href="css/list.mob.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="top-nav">
+        <div class="container">
+            <div class="screening" id="picker">
+                <i class="iconfont">&#xe611;</i> 筛选
+            </div>
+            <span class="menu-button">
+                <i class="iconfont">&#xe600;</i>
+            </span>
+        </div>
+    </div>
+
+    <div class="menu-layer" style="display: none;">
+        <span class="close-btn">
+            <i class="iconfont">&#xe601;</i>
+        </span>
+        <div class="menu-layer-table">
+            <div class="menu-layer-tr">
+                <div class="menu-layer-td">
+                    <a href="index.html">首页</a>
+                </div>
+            </div>
+            <div class="menu-layer-tr">
+                <div class="menu-layer-td">
+                    <a class="active" href="min_glorystone_list.html">荣耀碑</a>
+                </div>
+            </div>
+            <div class="menu-layer-tr">
+                <div class="menu-layer-td">
+                    <a href="#">预言家</a>
+                </div>
+            </div>
+            <div class="menu-layer-tr">
+                <div class="menu-layer-td">
+                    <a href="#">光荣立碑</a>
+                </div>
+            </div>
+            <div class="menu-layer-tr">
+                <div class="menu-layer-td">
+                    <input type="text" class="search-text" placeholder="请输入关键字" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="selected-layer">
+        <div class="container" id="selectedlayer">
+
+        </div>
+    </div>
+
+    <div class="company-list">
+        <div class="container">
+            <div class="media">
+                <div class="media-left">
+                    <div class="company-logo">
+                        <span>媒体</span>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <h5>快播</h5>
+                    <p>让精彩无处可藏</p>
+                    <p>www.kuaibo.com</p>
+                </div>
+                <div class="media-right">
+                    <p>
+                        <i class="iconfont">&#xe645;</i> 999
+                    </p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <div class="company-logo">
+                        <span>媒体</span>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <h5>快播</h5>
+                    <p>让精彩无处可藏</p>
+                    <p>www.kuaibo.com</p>
+                </div>
+                <div class="media-right">
+                    <p>
+                        <i class="iconfont">&#xe645;</i> 999
+                    </p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <div class="company-logo">
+                        <span>媒体</span>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <h5>快播</h5>
+                    <p>让精彩无处可藏</p>
+                    <p>www.kuaibo.com</p>
+                </div>
+                <div class="media-right">
+                    <p>
+                        <i class="iconfont">&#xe645;</i> 999
+                    </p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <div class="company-logo">
+                        <span>媒体</span>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <h5>快播</h5>
+                    <p>让精彩无处可藏</p>
+                    <p>www.kuaibo.com</p>
+                </div>
+                <div class="media-right">
+                    <p>
+                        <i class="iconfont">&#xe645;</i> 999
+                    </p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <div class="company-logo">
+                        <span>媒体</span>
+                    </div>
+                </div>
+                <div class="media-body">
+                    <h5>快播</h5>
+                    <p>让精彩无处可藏</p>
+                    <p>www.kuaibo.com</p>
+                </div>
+                <div class="media-right">
+                    <p>
+                        <i class="iconfont">&#xe645;</i> 999
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="loading-more">加载更多</button>
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="picker.min.js"></script>
+    <script>
+        if($(window).width() >= 641){
+            location.href="../glorystone_list.html";
+        }
+        $(window).resize(function () {
+            if($(window).width() >= 641){
+                location.href="../glorystone_list.html";
+            }
+        })
+
+        $(document).ready(function () {
+            $(".menu-layer .close-btn").click(function () {
+                $(".menu-layer").fadeOut(250);
+            })
+            $(".top-nav .container .menu-button").click(function () {
+                $(".menu-layer").fadeIn(250);
+            })
+        })
+
+
+        var nameEl = document.getElementById('picker');
+
+        var data1 = [
+            {
+                text: '不限年份',
+                value: 0
+            },{
+                text: '2011年',
+                value: 1
+            },{
+                text: '2012年',
+                value: 2
+            },{
+                text: '2013年',
+                value: 3
+            },{
+                text: '2014年',
+                value: 4
+            },{
+                text: '2015年',
+                value: 5
+            },{
+                text: '2016年',
+                value: 6
+            },{
+                text: '2017年',
+                value: 7
+            }
+        ];
+
+        var data2 = [
+            {
+                text: '不限月份',
+                value: 0
+            },{
+                text: '1月',
+                value: 1
+            },{
+                text: '2月',
+                value: 2
+            },{
+                text: '3月',
+                value: 3
+            },{
+                text: '4月',
+                value: 4
+            },{
+                text: '5月',
+                value: 5
+            },{
+                text: '6月',
+                value: 6
+            },{
+                text: '7月',
+                value: 7
+            },{
+                text: '8月',
+                value: 8
+            },{
+                text: '9月',
+                value: 9
+            },{
+                text: '10月',
+                value: 10
+            },{
+                text: '11月',
+                value: 11
+            },{
+                text: '12月',
+                value: 12
+            }
+        ];
+
+        var data3 = [
+            {
+                text: '不限行业',
+                value: 1
+            },{
+                text: '电商',
+                value: 2
+            },{
+                text: '社交',
+                value: 3
+            },{
+                text: '工具',
+                value: 4
+            },{
+                text: '媒体',
+                value: 5
+            }
+        ];
+
+        var picker = new Picker({
+            data: [data1, data2, data3],
+            selectedIndex: [7, 6, 0],
+//            title: '我们都是小学生'
+        });
+
+        var selEl = document.getElementById('selectedlayer');
+
+        picker.on('picker.select', function (selectedVal, selectedIndex) {
+            selEl.innerHTML = '<span>' + data1[selectedIndex[0]].text + ' / ' + data2[selectedIndex[1]].text + ' / ' + data3[selectedIndex[2]].text + '</span>';
+        })
+
+        picker.on('picker.change', function (index, selectedIndex) {
+            console.log(index);
+            console.log(selectedIndex);
+        });
+
+        picker.on('picker.valuechange', function (selectedVal, selectedIndex) {
+            console.log("selectedVal:" + selectedVal);
+            console.log("selectedIndex:" + selectedIndex);
+        });
+
+        nameEl.addEventListener('click', function () {
+            picker.show();
+        });
+    </script>
+</body>
+</html>
